@@ -7,6 +7,7 @@ describe('Matching Engine – Repertoire Management Module', () => {
   const repertoirePage = new RepertoireManagementPage();
 
   beforeEach(() => {
+    //Verify website launch successfully
       homePage.visit();
       homePage.handleCookieBanner();
   });
@@ -14,20 +15,20 @@ describe('Matching Engine – Repertoire Management Module', () => {
 
   it('Validates supported products under Repertoire Management Module', () => {
 
-    // Expand Modules menu
+    // Verify Modules menu Open successfully
     homePage.openModulesMenu();
     //homePage.handleCookieBanner();
 
-    // Navigate to Repertoire Management Module
+    // Verify Repertoire Management Module navigation
     homePage.clickRepertoireManagementModule();
 
-    // Scroll to Additional Features
+    // Verify Additional Features section visibility
     repertoirePage.scrollToAdditionalFeatures();
 
-    // Open Products Supported accordion
+    // Verify Products Supported section
     repertoirePage.clickProductsSupported();
 
-    // Assertions
+    //Verify supported products list
     repertoirePage.verifyProductsSupportedHeading();
     repertoirePage.verifySupportedProductsList();
 
