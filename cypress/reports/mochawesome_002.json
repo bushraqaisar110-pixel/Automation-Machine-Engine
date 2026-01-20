@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-01-20T13:56:22.089Z",
-    "end": "2026-01-20T13:56:24.690Z",
-    "duration": 2601,
+    "start": "2026-01-20T13:51:16.947Z",
+    "end": "2026-01-20T13:51:20.190Z",
+    "duration": 3243,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "03c5a3cd-0617-4809-bdd9-7f8ec32811b2",
+      "uuid": "dfc91246-d2d7-4618-845b-f9c7168d50bd",
       "title": "",
       "fullFile": "cypress/e2e/repertoireManagement.cy.js",
       "file": "cypress/e2e/repertoireManagement.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d9874e37-e587-4146-90ef-a72e203a00f1",
+          "uuid": "09553484-5bb3-4470-9acf-dd4e43a76362",
           "title": "Matching Engine – Repertoire Management Module",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validates supported products under Repertoire Management Module",
               "fullTitle": "Matching Engine – Repertoire Management Module Validates supported products under Repertoire Management Module",
               "timedOut": null,
-              "duration": 2567,
+              "duration": 3206,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// Expand Modules menu\nhomePage.openModulesMenu();\n//homePage.handleCookieBanner();\n// Navigate to Repertoire Management Module\nhomePage.clickRepertoireManagementModule();\n// Scroll to Additional Features\nrepertoirePage.scrollToAdditionalFeatures();\n// Open Products Supported accordion\nrepertoirePage.clickProductsSupported();\n// Assertions\nrepertoirePage.verifyProductsSupportedHeading();\nrepertoirePage.verifySupportedProductsList();",
               "err": {},
-              "uuid": "4ca9ebd7-29fc-4875-b9ab-01ad3df548cf",
-              "parentUUID": "d9874e37-e587-4146-90ef-a72e203a00f1",
+              "uuid": "e1b2a351-52f5-4ad4-b382-918d9e8ee2b1",
+              "parentUUID": "09553484-5bb3-4470-9acf-dd4e43a76362",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4ca9ebd7-29fc-4875-b9ab-01ad3df548cf"
+            "e1b2a351-52f5-4ad4-b382-918d9e8ee2b1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2567,
+          "duration": 3206,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -95,8 +95,8 @@
     "marge": {
       "options": {
         "reportDir": "cypress/reports",
-        "overwrite": true,
-        "html": true,
+        "overwrite": false,
+        "html": false,
         "json": true
       },
       "version": "6.3.2"

@@ -5,7 +5,7 @@ module.exports = defineConfig({
     baseUrl: 'https://www.matchingengine.com',
     chromeWebSecurity: false,
 
-    screenshotsFolder: 'mathingengineSS/screenshots',
+    screenshotsFolder: 'mathingengScreen/screenshots',
     videosFolder: 'mathingengine/videos',
     screenshotOnRunFailure: true,
     video: true,
@@ -13,8 +13,8 @@ module.exports = defineConfig({
     reporter: 'mochawesome',
     reporterOptions: {
       reportDir: 'cypress/reports',
-      overwrite: false,
-      html: false,
+      overwrite: true,
+      html: true,
       json: true
     }
   }
