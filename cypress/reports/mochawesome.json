@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-20T11:53:28.442Z",
+    "end": "2026-01-20T11:53:35.822Z",
+    "duration": 7380,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d86cf214-feb4-4745-afeb-cd8740467dac",
+      "title": "",
+      "fullFile": "cypress/e2e/repertoireManagement.cy.js",
+      "file": "cypress/e2e/repertoireManagement.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "08385e15-41d2-45da-9941-ca1cdcadea15",
+          "title": "Matching Engine – Repertoire Management Module",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validates supported products under Repertoire Management Module",
+              "fullTitle": "Matching Engine – Repertoire Management Module Validates supported products under Repertoire Management Module",
+              "timedOut": null,
+              "duration": 7351,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Expand Modules menu\nhomePage.openModulesMenu();\n//homePage.handleCookieBanner();\n// Navigate to Repertoire Management Module\nhomePage.clickRepertoireManagementModule();\n// Scroll to Additional Features\nrepertoirePage.scrollToAdditionalFeatures();\n// Open Products Supported accordion\nrepertoirePage.clickProductsSupported();\n// Assertions\nrepertoirePage.verifyProductsSupportedHeading();\nrepertoirePage.verifySupportedProductsList();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Products Supported' within the selector: 'pan' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Products Supported' within the selector: 'pan' but never did.\n    at RepertoireManagementPage.clickProductsSupported (webpack://matching-engine-cypress/./cypress/pages/RepertoireManagementPage.js:13:9)\n    at Context.eval (webpack://matching-engine-cypress/./cypress/e2e/repertoireManagement.cy.js:28:19)",
+                "diff": null
+              },
+              "uuid": "56c78246-e5d1-4284-a8cd-4f7bf4e4e76e",
+              "parentUUID": "08385e15-41d2-45da-9941-ca1cdcadea15",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "56c78246-e5d1-4284-a8cd-4f7bf4e4e76e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7351,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
