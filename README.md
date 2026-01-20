@@ -71,13 +71,14 @@ cd matching-engine-cypress
 Install dependencies:
 
 npm install
-
 Running Tests
 Open Cypress Test Runner
 npx cypress open
 
 Run Tests in Headless Mode
 npx cypress run --browser chrome
+-- headed mode
+npx cypress run --headed --browser chrome
 
 Test Cases Covered
 TC01 – Verify Website Launch Successfully
@@ -116,10 +117,11 @@ Objective: Validate supported products list
 
 Expected Result: Displayed list matches expected supported products
 
-🌐 Browser Coverage
+
+Browser Coverage
 
 Google Chrome (Primary)
 
-👤 Test Ownership
+Test Ownership
 
 Assigned QA: Bushra Qaisar

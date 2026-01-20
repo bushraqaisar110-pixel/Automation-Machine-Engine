@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-01-20T13:56:22.089Z",
-    "end": "2026-01-20T13:56:24.690Z",
-    "duration": 2601,
+    "start": "2026-01-20T13:59:16.445Z",
+    "end": "2026-01-20T13:59:19.953Z",
+    "duration": 3508,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "03c5a3cd-0617-4809-bdd9-7f8ec32811b2",
+      "uuid": "65fd0c75-cfe0-49d8-b524-5bcd83cbdaf1",
       "title": "",
       "fullFile": "cypress/e2e/repertoireManagement.cy.js",
       "file": "cypress/e2e/repertoireManagement.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d9874e37-e587-4146-90ef-a72e203a00f1",
+          "uuid": "773a25b9-0e02-4c90-9506-a1b6dace35b9",
           "title": "Matching Engine – Repertoire Management Module",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Validates supported products under Repertoire Management Module",
               "fullTitle": "Matching Engine – Repertoire Management Module Validates supported products under Repertoire Management Module",
               "timedOut": null,
-              "duration": 2567,
+              "duration": 3464,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "// Expand Modules menu\nhomePage.openModulesMenu();\n//homePage.handleCookieBanner();\n// Navigate to Repertoire Management Module\nhomePage.clickRepertoireManagementModule();\n// Scroll to Additional Features\nrepertoirePage.scrollToAdditionalFeatures();\n// Open Products Supported accordion\nrepertoirePage.clickProductsSupported();\n// Assertions\nrepertoirePage.verifyProductsSupportedHeading();\nrepertoirePage.verifySupportedProductsList();",
+              "code": "// Verify Modules menu Open successfully\nhomePage.openModulesMenu();\n//homePage.handleCookieBanner();\n// Verify Repertoire Management Module navigation\nhomePage.clickRepertoireManagementModule();\n// Verify Additional Features section visibility\nrepertoirePage.scrollToAdditionalFeatures();\n// Verify Products Supported section\nrepertoirePage.clickProductsSupported();\n//Verify supported products list\nrepertoirePage.verifyProductsSupportedHeading();\nrepertoirePage.verifySupportedProductsList();",
               "err": {},
-              "uuid": "4ca9ebd7-29fc-4875-b9ab-01ad3df548cf",
-              "parentUUID": "d9874e37-e587-4146-90ef-a72e203a00f1",
+              "uuid": "2b026985-554a-462a-acfc-af05f0a40a30",
+              "parentUUID": "773a25b9-0e02-4c90-9506-a1b6dace35b9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4ca9ebd7-29fc-4875-b9ab-01ad3df548cf"
+            "2b026985-554a-462a-acfc-af05f0a40a30"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2567,
+          "duration": 3464,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
